@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator For pythagoras Theroem</title>
+  </head>
+  <body>
+    <label for="aTextButton">Side A</label>
+    <input type="text" id="aTextButton"> <br>
+
+    <label for="bTextButton">Side B</label>
+    <input type="text" id="bTextButton"><br>
+
+    <button type="button" id="myButton">Submit</button>
+    <label for="myButton" id="Button"></label> <br>
+    <script>
+      var a;
+      var b;
+      var c;
+
+     /*
+      a = window.prompt("Enter Side A");
+      a = Number(a);
+
+      b = window.prompt("Enter  Side B");
+      b = Number(b);
+
+      c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+      console.log("Side C:", c );
+      */
+      document.getElementById("myButton").onclick = function(){
+        a = document.getElementById("aTextButton").value;
+        a = Number(a);
+
+        b = document.getElementById("bTextButton").value;
+        b = Number(b);
+
+        c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+         document.getElementById("Button").innerHTML = "Side C:" + c;
+      }   
+      
+  </script>
+  </body>
+</html>
