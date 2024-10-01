@@ -112,6 +112,9 @@ li:first-child{
   .hideOnMobile{
     display:none;
   }
+  .body h1{
+    font-size: 30px
+  }
 }
 
 /* ---Course--- */
@@ -350,7 +353,7 @@ p .fa-regular{
 /* --About Us-- */
 
 .sub-header{
-  min-height: 50vh;
+  min-height: 30vh;
   width: 100%;
   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("about-us.jpg");
   background-size: cover;
