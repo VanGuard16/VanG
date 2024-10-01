@@ -93,6 +93,7 @@ li:first-child{
 }
 .sidebar a{
   width: 100%;
+  color: black;
 }
 .sidebar a:hover{
   background-color: hsla(0, 0%, 0%, 0.233);
