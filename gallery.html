@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="class.css">
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar() ><a href="#"></a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="admission.html">ADMISSION</a></li>
+          <li><a href="academics.html">ACADEMICS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+         
+        </ul>
+        <ul>
+          <li><a href="#">EACOED MHS</a></li>
+          <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+          <li class="hideOnMobile"><a href="about-us.html">ABOUT US</a></li>
+          <li class="hideOnMobile"><a href="admission.html">ADMISSION</a></li>
+          <li class="hideOnMobile"><a href="academics.html">ACADEMICS</a></li>
+          <li class="hideOnMobile"><a href="gallery.html">GALLERY</a></li>
+          <li class="hideOnMobile"><a href="contact.html">CONTACT US</a></li>
+          <li onclick=showSidebar() class="hidden" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+      <h1> Gallery</h1>
+      </section>
+
+      <section class="gallery">
+        <h1>Cultural Day 2024</h1>
+        <p>Earlier today on the 20th of June 2024, we celebrated our cultural festival at EAUED Model High School, Isokun, Oyo.</p>
+        <div class="gallery-row">
+          <div class="gallery-col">
+            <img src="cultural3.jpg" class="image">
+            <div class="overlay">
+              <h1 class="text">Memories</h1>
+            </div>
+          </div>
+          <div class="gallery-col">
+            <img src="cultural1.jpg" class="image">
+            <div class="middle">
+              <h1 class="text">BATA Dance</h1>
+            </div>
+          </div>
+          <div class="gallery-col">
+            <img src="cultural7.jpg" class="image">
+            <div class="overlay">
+              <h1 class="text">Memories</h1>
+            </div>
+          </div>
+        </div>
+        <div class="show-more">
+          <div class="gallery-row">
+            <div class="gallery-col">
+              <img src="cultural6.jpg" class="image">
+              <div class="overlay">
+                <h1 class="text">Memories</h1>
+              </div>
+            </div>
+            <div class="gallery-col">
+              <img src="cultural4.jpg" class="image">
+              <div class="middle">
+                <h1 class="text">Memories</h1>
+              </div>
+            </div>
+            <div class="gallery-col">
+              <img src="cultural5.jpg" class="image">
+              <div class="overlay">
+                <h1 class="text">Memories</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onclick="show()" class="show">Show More</button>
+        
+        <div class="h1">
+        <h1>Excursion</h1>
+        <p>Relive the unforgettable memories from our exciting excursion event, where adventure and learning came together to create lasting experiences!</p>
+      </div>
+        <div class="gallery-row">
+          <div class="gallery-col">
+            <img src="Memories1.jpg" class="image">
+            <div class="overlay">
+              <h1 class="text">A day Chairman</h1>
+            </div>
+          </div>
+          <div class="gallery-col">
+            <img src="excursion2.jpg" class="image">
+            <div class="middle">
+              <h1 class="text">Memories</h1>
+            </div>
+          </div>
+          <div class="gallery-col">
+            <img src="cultural2.jpg" class="image">
+            <div class="overlay">
+              <h1 class="text">Memories</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+<!-- ---footer-- -->
+
+<section class="footer">
+  <h4>About</h4>
+  <p>© 2024 EAUED Model High School. All rights reserved. | Privacy Policy | Terms of Use
+
+    EAUED Model High School, Opp. Old Oyo, Isokun  
+    Phone: +2348148224240 | Email: ibrahimkhidir25@gmail.com
+    
+    Follow us on: Facebook | Instagram | Twitter | YouTube
+    
+    Parent Portal | Student Portal | Staff Directory | Contact Us
+    </p>
+  <div class="icon">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+  <p> Made with <i class="fa-regular fa-heart"></i> by Khidir Ibrahim</p>
+</section>
+  <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+      function show(){
+        const show = document.querySelector('.show-more');
+        if(show.style.display==="flex"){
+          show.style.display = 'none'
+        }
+        else{
+          show.style.display = 'flex'
+        }
+
+        const change = document.querySelector('.show');
+        if(change.innerHTML=== 'Show More'){
+          change.innerHTML  = 'Show Less'
+        }
+        else{
+          change.innerHTML = 'Show More'
+        }
+      }
+  </script>
+  
+  </body>
+</html>

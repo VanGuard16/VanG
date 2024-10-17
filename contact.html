@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="class.css">
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar() ><a href="#"></a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="admission.html">ADMISSION</a></li>
+          <li><a href="academics.html">ACADEMICS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+         
+        </ul>
+        <ul>
+          <li><a href="#">EACOED MHS</a></li>
+          <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+          <li class="hideOnMobile"><a href="about-us.html">ABOUT US</a></li>
+          <li class="hideOnMobile"><a href="admission.html">ADMISSION</a></li>
+          <li class="hideOnMobile"><a href="academics.html">ACADEMICS</a></li>
+          <li class="hideOnMobile"><a href="gallery.html">GALLERY</a></li>
+          <li class="hideOnMobile"><a href="contact.html">CONTACT US</a></li>
+          <li onclick=showSidebar() class="hidden" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+      <h1> Contact</h1>
+      </section>
+
+      <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.4430134752147!2d3.910795900000006!3d7.8486157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1037594e69307eeb%3A0x9586f721755a5567!2sEACOED%20Model%20High%20School!5e0!3m2!1sen!2sng!4v1720302748939!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      </section>
+      <section class="contact">
+        <div class="row">
+          <div class="contact-col">
+            <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+              <h5> Opposite Old Oyo National Park</h5>
+              <p>Isokun, Oyo</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone "></i>
+              <span>
+                <h5> +234 8148224340 </h5>
+                <p>Monday to Friday, 8AM to 4PM</p>
+                </span>
+              </div>
+              <div>
+               <i class="fa-solid fa-envelope"></i>
+                <span>
+                  <h5> ibrahimkhidir25@gmail.com</h5>
+                  <p>Email us your query</p>
+                  </span>
+              </div>
+          </div>
+          <div class="contact-col">
+            <form action="https://formsubmit.co/ibrahimkhidir25@gmail.com" method="POST">
+              <input type="text" placeholder="Enter Your Name" name="name">
+              <input type="email" placeholder="Enter Your Email Address" name="email">
+              <input type="number" placeholder="Enter Your Phone Number" name="number">
+              <textarea rows="10" placeholder="Message" required name="message"></textarea>
+              <button type="submit" class=" red-btn hero-btn" name="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+<!-- ---footer-- -->
+
+<section class="footer">
+  <h4>About</h4>
+  <p><p>© 2024 EAUED Model High School. All rights reserved. | Privacy Policy | Terms of Use
+
+    EAUED Model High School, Opp. Old Oyo, Isokun  
+    Phone: +2348148224240 | Email: ibrahimkhidir25@gmail.com
+    
+    Follow us on: Facebook | Instagram | Twitter | YouTube
+    
+    Parent Portal | Student Portal | Staff Directory | Contact Us</p>
+  <div class="icon">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+  <p> Made with <i class="fa-regular fa-heart"></i> by Khidir Ibrahim</p>
+</section>
+  <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+  </script>
+  </body>
+</html>
